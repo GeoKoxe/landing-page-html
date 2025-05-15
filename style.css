@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.background-color {
+  background-color: #674bb1;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.background-image {
+  background-image: url("./images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.main-container {
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mockup img {
+  width: 900px;
+  max-width: 100%;
+  margin-left: 120px;
+}
+
+.main-text {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  margin-left: 30px;
+  height: auto;
+  max-width: 600px;
+}
+
+.title-text {
+  font-size: 40px;
+  font-weight: bold;
+  margin-right: 300px;
+}
+
+.description-text {
+  width: 100%;
+  font-size: 20px;
+  text-wrap: balance;
+  color: #ffffffb9;
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 30px;
+  background: #ffffff;
+  border: 0;
+  box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  color: #6751ad;
+  display: inline-flex;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 56px;
+  justify-content: center;
+  padding: 19px;
+  width: 190px;
+  border-radius: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+button:hover {
+  background: #ff96ee;
+  color: white;
+}
+
+button:active {
+  background-color: #be68b0;
+  transform: translateY(1px);
+}
+
+.socials {
+  width: 79%;
+  display: flex;
+  justify-content: right;
+  margin-top: 40px;
+  gap: 10px;
+}
+
+#social {
+  border: solid 1px white;
+  border-radius: 50%;
+  padding: 8px;
+  color: white;
+  font-size: 25px;
+}
+
+.title-logo {
+  width: 79%;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#huddle-logo {
+  width: 250px;
+  max-width: 80%;
+}
+@media (max-width: 1024px) {
+  .content-container {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .mockup img {
+    margin-left: 0;
+    max-width: 90%;
+  }
+
+  .title-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .main-text {
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
+  .socials {
+    width: 79%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 10px;
+  }
+
+  .title-text {
+    margin-right: 0;
+    font-size: 28px;
+  }
+
+  .description-text {
+    font-size: 16px;
+  }
+
+  button {
+    margin-top: 20px;
+  }
+
+  .background-image {
+    background-image: url("./images/bg-mobile.svg");
+    background-size: cover;
+  }
+}
